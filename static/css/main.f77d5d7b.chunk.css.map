@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAIA,OAHE,0CAOF,CAJA,KACE,QAGF,CAEA,KACE,0CAEF","file":"main.f77d5d7b.chunk.css","sourcesContent":["*{\n  font-family: 'Bebas Neue', cursive !important;\n}\n\nbody {\n  margin: 0;\n  font-family: 'Bebas Neue', cursive !important;\n\n}\n\ncode {\n  font-family: 'Bebas Neue', cursive !important;\n\n}\n"]}
