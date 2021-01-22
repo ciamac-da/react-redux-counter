@@ -1,10 +1,14 @@
+*{
+  font-family: 'Bebas Neue', cursive !important;
+}
+
 body {
   margin: 0;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', cursive !important;
 
 }
 
 code {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', cursive !important;
 
 }

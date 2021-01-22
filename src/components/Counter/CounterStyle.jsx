@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { green } from '@material-ui/core/colors';
-import { ButtonGroup } from '@material-ui/core/ButtonGroup';
+import Badge from '@material-ui/core/Badge';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,11 +19,17 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         textAlign: "center",
         backgroundColor:"silver"
-
+    },
+    myH3:{
+        display: "flex",
+        justifyContent: "center",
+        textAlign: "center",
+        paddingTop: "100px"
     },
     myIcons:{
         display:"flex",
-        justifyContent:"center"
+        justifyContent:"center",
+        backgroundColor:"orange"
     },
     btnGroup:{
     display: "flex",
@@ -38,6 +44,15 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor:"green !important",
         color:"white",
     },
+    badge: {
+        border: `2px solid ${theme.palette.background.paper}`,
+        padding: "0 4px"
+      },
+      headBadge:{
+        display: "flex",
+        justifyContent: "center !important",
+        margin: "auto"
+      }
   }));
 
   export default useStyles;
