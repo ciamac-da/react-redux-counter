@@ -32,9 +32,9 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor:"orange"
     },
     btnGroup:{
-    display: "flex",
-    justifyContent: "center",
-    paddingTop: "50px",
+    display: "flex !important",
+    justifyContent: "center !important",
+    paddingTop: "50px !important",
     },
     btnMinus:{
         backgroundColor:"red !important",
@@ -49,9 +49,9 @@ const useStyles = makeStyles((theme) => ({
         padding: "0 4px"
       },
       headBadge:{
-        display: "flex",
+        display: "flex !important",
         justifyContent: "center !important",
-        margin: "auto"
+        margin: "auto !important"
       }
   }));
 
