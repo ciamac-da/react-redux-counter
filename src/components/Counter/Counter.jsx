@@ -53,7 +53,7 @@ const Counter = () => {
 
             
         <ButtonGroup className={classes.btnGroup}>
-        <Button className={classes.btnMinus} onClick={()=>dispatch(log_in())}>Login</Button>
+        <Button className={classes.btnSubmit} onClick={()=>dispatch(log_in())}>Login</Button>
         </ButtonGroup>
 
              {login ? (

@@ -44,6 +44,11 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor:"green !important",
         color:"white !important",
     },
+    btnSubmit:{
+      fontSize:"16px !important",
+      backgroundColor:"orange !important",
+      color:"white !important",
+  },
     badge: {
         border: `2px solid ${theme.palette.background.paper}`,
         padding: "0 4px"
