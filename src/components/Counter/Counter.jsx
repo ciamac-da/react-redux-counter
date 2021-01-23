@@ -9,9 +9,15 @@ import RemoveIcon from '@material-ui/icons/Remove';
 import IconButton from '@material-ui/core/IconButton';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import Badge from '@material-ui/core/Badge';
+import {useSelector ,useDispatch} from "react-redux";
+import { decrement, increment } from '../../actions/counter';
 
 const Counter = () => {
-const classes = myStyle()
+
+  const counter = useSelector(state=>state)
+  const dispatch = useDispatch();
+  const classes = myStyle()
+
     return ( 
         <>
             <div className={classes.root}>
@@ -26,7 +32,8 @@ const classes = myStyle()
             Counter!</Typography>
             
             <IconButton aria-label="cart" className={classes.headBadge}>
-               <Badge className={classes.badge} badgeContent={4} color="secondary">
+               <Badge className={classes.badge}   color="secondary">
+               {counter}
                  <ShoppingCartIcon />
                </Badge>
              </IconButton>
@@ -35,16 +42,10 @@ const classes = myStyle()
 
 
             <ButtonGroup className={classes.btnGroup}>
-          <Button
-          className={classes.btnMinus}
-            aria-label="reduce"
-          >
+          <Button className={classes.btnMinus} aria-label="reduce"  onClick={ ()=> dispatch(decrement()) }>
             <RemoveIcon fontSize="small" />
           </Button>
-          <Button
-            aria-label="increase"
-          className={classes.btnPlus}
-          >
+          <Button className={classes.btnPlus} aria-label="increase" onClick={ ()=> dispatch(increment()) }>
             <AddIcon fontSize="small" />
           </Button>
         </ButtonGroup>

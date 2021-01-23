@@ -38,11 +38,11 @@ const useStyles = makeStyles((theme) => ({
     },
     btnMinus:{
         backgroundColor:"red !important",
-        color:"white",
+        color:"white !important",
     },
     btnPlus:{
         backgroundColor:"green !important",
-        color:"white",
+        color:"white !important",
     },
     badge: {
         border: `2px solid ${theme.palette.background.paper}`,
