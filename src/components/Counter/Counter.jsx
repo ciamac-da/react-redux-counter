@@ -10,11 +10,12 @@ import IconButton from '@material-ui/core/IconButton';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import Badge from '@material-ui/core/Badge';
 import {useSelector ,useDispatch} from "react-redux";
-import { decrement, increment } from '../../actions/counter';
+import { decrement, increment, log_in } from '../../actions/counter';
 
 const Counter = () => {
 
-  const counter = useSelector(state=>state)
+  const counter = useSelector(state=>state.counter)
+  const login = useSelector(state=>state.login)
   const dispatch = useDispatch();
   const classes = myStyle()
 
@@ -33,11 +34,11 @@ const Counter = () => {
             
             <IconButton aria-label="cart" className={classes.headBadge}>
                <Badge className={classes.badge}   color="secondary">
-               {counter}
+             {counter}  &nbsp; 
                  <ShoppingCartIcon />
                </Badge>
              </IconButton>
-
+         
 
 
 
@@ -51,6 +52,18 @@ const Counter = () => {
         </ButtonGroup>
 
             
+        <ButtonGroup className={classes.btnGroup}>
+        <Button className={classes.btnMinus} onClick={()=>dispatch(log_in())}>Login</Button>
+        </ButtonGroup>
+
+             {login ? (
+               <>
+                 <Typography variant="h4" className={classes.myH3}>You are logged in!</Typography>
+               </>
+             ) : null }
+
+
+
             </Paper>
         </div>
         </>
